@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>隐私政策 - 泡泡相册</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <style>
+      :root {
+        --bg: #07080d;
+        --card: #151827;
+        --line: #23273a;
+        --text: #eef0f8;
+        --muted: #9aa1b9;
+        --accent: #7c8cff;
+        --accent-2: #4fd1c5;
+        --pink: #ff7ab6;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB",
+          "Microsoft YaHei", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.75;
+        -webkit-font-smoothing: antialiased;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        backdrop-filter: blur(16px);
+        background: rgba(7, 8, 13, 0.75);
+        border-bottom: 1px solid var(--line);
+      }
+      .nav-inner,
+      .footer-inner {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 0 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .nav-inner {
+        height: 64px;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--text);
+      }
+      .logo:hover {
+        text-decoration: none;
+      }
+      .logo-icon {
+        width: 32px;
+        height: 32px;
+        border-radius: 8px;
+        object-fit: cover;
+        display: block;
+      }
+      .nav-links a {
+        color: var(--muted);
+        margin-left: 24px;
+        font-size: 15px;
+      }
+      .nav-links a:hover {
+        color: var(--text);
+        text-decoration: none;
+      }
+      .doc {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 72px 24px 96px;
+      }
+      .doc h1 {
+        font-size: 38px;
+        margin-bottom: 8px;
+      }
+      .updated {
+        color: var(--muted);
+        font-size: 14px;
+        margin-bottom: 40px;
+      }
+      .doc h2 {
+        font-size: 22px;
+        margin: 40px 0 14px;
+      }
+      .doc h3 {
+        font-size: 17px;
+        margin: 22px 0 8px;
+      }
+      .doc p,
+      .doc li {
+        color: #c8cce0;
+        margin-bottom: 10px;
+      }
+      .doc ul,
+      .doc ol {
+        padding-left: 22px;
+        margin-bottom: 12px;
+      }
+      .doc strong {
+        color: var(--text);
+      }
+      .summary {
+        background: var(--card);
+        border: 1px solid var(--line);
+        border-left: 4px solid var(--accent-2);
+        border-radius: 14px;
+        padding: 20px 24px;
+        margin-bottom: 32px;
+      }
+      .summary p {
+        margin: 0;
+      }
+      footer {
+        border-top: 1px solid var(--line);
+        padding: 40px 0;
+        color: var(--muted);
+        font-size: 14px;
+      }
+      .footer-inner {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+      footer nav a {
+        color: var(--muted);
+        margin-left: 20px;
+      }
+      footer nav a:hover {
+        color: var(--text);
+      }
+      @media (max-width: 640px) {
+        .doc h1 {
+          font-size: 30px;
+        }
+        .nav-links a {
+          margin-left: 14px;
+        }
+        footer nav a {
+          margin: 0 16px 0 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="logo"
+          ><img src="logo.png" alt="泡泡相册" class="logo-icon" />泡泡相册</a
+        >
+        <nav class="nav-links">
+          <a href="index.html">首页</a>
+          <a href="terms.html">用户协议</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="doc">
+      <h1>隐私政策</h1>
+      <p class="updated">
+        更新日期：2026 年 11 月 11 日 · 生效日期：2026 年 11 月 11 日
+      </p>
+
+      <div class="summary">
+        <p>
+          <strong>简要说明：</strong>泡泡相册在你的 iPhone
+          上读取、分析和分类照片，不会上传任何照片或分析结果。我们不需要你注册账号，也不会收集可以识别你身份的个人信息。
+        </p>
+      </div>
+
+      <p>
+        泡泡相册（以下简称「本应用」）由泡泡相册开发者（以下简称「我们」）开发和运营。本政策说明本应用如何处理你的信息。使用本应用前，请仔细阅读本政策。
+      </p>
+
+      <h2>一、我们处理哪些信息</h2>
+      <h3>1. 照片和视频</h3>
+      <p>经你授权后，本应用会通过系统 PhotoKit 框架访问你的照片库，用来：</p>
+      <ul>
+        <li>按时间、类型显示照片和视频，供你整理；</li>
+        <li>识别重复、相似和模糊的照片；</li>
+        <li>
+          通过 Apple Vision
+          框架在设备上识别照片内容类别（如人物、假期、美食、宠物、风景、文档等）；
+        </li>
+        <li>在你确认后删除照片，或把照片加入你指定的相簿；</li>
+        <li>删除没有照片的空相簿（需经你确认）。</li>
+      </ul>
+      <p>
+        <strong
+          >以上处理全部在你的设备上完成。照片、视频及其分析结果不会上传到我们或任何第三方的服务器。</strong
+        >
+      </p>
+
+      <h3>2. 在设备上保存的数据</h3>
+      <p>
+        为实现断点续整、进度统计和加快分析，本应用会在你的设备上保存以下数据：
+      </p>
+      <ul>
+        <li>整理记录：已保留、待删除的照片标识，以及各整理模式的进度；</li>
+        <li>分析缓存：照片特征值、清晰度评分、分类结果等；</li>
+        <li>统计数据：累计删除数量、释放空间、每月统计；</li>
+        <li>应用设置：语言、声音、震动、排序方向、泡泡列数和特效等偏好。</li>
+      </ul>
+      <p>这些数据只保存在本应用的本地沙盒中，我们无法访问。</p>
+
+      <h3>3. 购买信息</h3>
+      <p>
+        如果你在本应用中购买付费功能，交易由 Apple 通过 App Store
+        处理。我们不会收集你的支付信息，只会在设备上验证购买状态，以便为你解锁对应功能。
+      </p>
+
+      <h3>4. 我们不收集的信息</h3>
+      <p>
+        本应用不要求注册或登录，不收集你的姓名、手机号、邮箱、位置、通讯录等个人信息，不使用广告标识符（IDFA），也不追踪你在其他应用或网站上的行为。
+      </p>
+
+      <h2>二、权限说明</h2>
+      <ul>
+        <li>
+          <strong>照片库访问权限：</strong
+          >用于读取、整理和删除照片，是本应用的核心权限。你可以选择授权全部或部分照片，也可以随时在系统「设置
+          &gt; 隐私与安全性 &gt; 照片」中更改。
+        </li>
+        <li>
+          <strong>运动传感器（陀螺仪）：</strong
+          >只在你开启泡泡整理的「陀螺仪沉浸模式」时使用，用来让泡泡随手机倾斜漂动。数据只在运行时实时使用，不会保存或传输。
+        </li>
+        <li>
+          <strong>网络：</strong>只在由系统从 iCloud 照片下载原图，以及处理 App
+          Store 购买时使用。
+        </li>
+      </ul>
+
+      <h2>三、照片删除说明</h2>
+      <p>
+        本应用中的删除操作会先把照片放入应用内的「待删除区」，不会改动你的照片库，确认前你可以随时把照片移出。只有在你确认、并在系统确认框中再次同意后，照片才会被批量删除。删除的照片会进入系统相册的「最近删除」，在系统规定的期限内可以恢复。
+      </p>
+
+      <h2>四、第三方共享</h2>
+      <p>
+        我们不会出售、出租或与任何第三方共享你的照片、分析结果或使用数据。本应用不集成第三方广告或数据分析
+        SDK。
+      </p>
+
+      <h2>五、你的权利</h2>
+      <ul>
+        <li>
+          <strong>清除分析缓存：</strong>在「设置 &gt;
+          数据与隐私」中清除所有分析缓存；
+        </li>
+        <li>
+          <strong>重置整理记录：</strong>在「设置 &gt;
+          数据与隐私」中清除整理进度和记录；
+        </li>
+        <li><strong>撤回授权：</strong>在系统设置中随时关闭照片访问权限；</li>
+        <li>
+          <strong>删除全部数据：</strong
+          >卸载本应用后，保存在设备上的所有相关数据将一并删除。
+        </li>
+      </ul>
+
+      <h2>六、未成年人保护</h2>
+      <p>
+        本应用不会主动收集任何人的个人信息，包括未成年人。未满 14
+        周岁的未成年人应在监护人的指导下使用本应用。
+      </p>
+
+      <h2>七、数据安全</h2>
+      <p>
+        本地数据受 iOS
+        系统沙盒和数据保护机制保护。为保护你的数据安全，请为设备设置锁屏密码，并及时更新系统。
+      </p>
+
+      <h2>八、政策更新</h2>
+      <p>
+        我们可能会不时更新本政策。更新后的政策会在本页面发布，并更新页首的「更新日期」。如有重大变更，我们会在应用内以适当方式提示你。
+      </p>
+
+      <h2>九、联系我们</h2>
+      <p>
+        如对本政策有任何疑问、意见或建议，请发送邮件至
+        <a href="mailto:nanli0709@foxmail.com">nanli0709@foxmail.com</a
+        >，我们会在 15 个工作日内回复。
+      </p>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <span>© 2026 泡泡相册. All rights reserved.</span>
+        <nav>
+          <a href="index.html">首页</a>
+          <a href="terms.html">用户协议</a>
+          <a href="mailto:nanli0709@foxmail.com">联系我们</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

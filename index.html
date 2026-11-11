@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>泡泡相册 - 把清理相册变成小游戏</title>
+    <link rel="icon" type="image/png" href="logo.png" />
+    <link rel="apple-touch-icon" href="logo.png" />
+    <meta
+      name="description"
+      content="泡泡相册是一款 iOS 相册照片清理 App。上划把照片喂给灵动岛，点碎照片泡泡，像拆盲盒一样整理相册。所有分析均在设备本地完成。"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container">
+        <a href="index.html" class="logo"
+          ><img src="logo.png" alt="泡泡相册" class="logo-icon" />泡泡相册</a
+        >
+        <ul class="nav-links">
+          <li><a href="#modes">整理模式</a></li>
+          <li><a href="#features">核心功能</a></li>
+          <li><a href="#smart">智能清理</a></li>
+          <li><a href="#privacy">隐私</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="bubbles" id="bubbles"></div>
+      <div class="container">
+        <h1>清理相册，<br />像玩游戏一样轻松</h1>
+        <p class="lead">
+          上划把照片「喂」给灵动岛，点碎照片泡泡，随机抽一批照片像拆盲盒一样整理。泡泡相册让整理相册不再是一件让人头疼的事。
+        </p>
+        <a href="#" class="btn">在 App Store 下载</a>
+        <a href="#modes" class="btn ghost">了解更多</a>
+        <p class="meta">适用于 iPhone · 需要 iOS 17.0 或更高版本</p>
+      </div>
+    </section>
+
+    <section id="modes">
+      <div class="container">
+        <div class="section-title">
+          <h2>四种整理方式，总有一种适合你</h2>
+          <p>按时间、随手抽、点泡泡、按类型，想怎么整理就怎么整理</p>
+        </div>
+        <div class="grid">
+          <div class="card">
+            <div class="icon">📅</div>
+            <h3>按月整理</h3>
+            <p>
+              时间线按年、月分组，每月卡片显示封面、整理进度和完成标记。可设置排序方向，隐藏已完成月份。
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">🎁</div>
+            <h3>随机整理</h3>
+            <p>
+              从未整理的照片里随机抽一批，像相纸一样撒满屏幕。整理完点「再来一批」，像拆盲盒一样停不下来。
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">🫧</div>
+            <h3>泡泡整理</h3>
+            <p>
+              照片化作泡泡持续向上流动，点一下泡泡碎掉，长按放大预览。提供肥皂泡、喷射墨水、仙女棒三种特效，还支持陀螺仪沉浸模式。
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">🗂️</div>
+            <h3>分类整理</h3>
+            <p>
+              截图、视频、实况照片分开整理，每类都能看到数量、总大小和整理进度。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="container">
+        <div class="feature-row">
+          <div>
+            <span class="tag">逐张整理</span>
+            <h3>上划一下，喂给灵动岛</h3>
+            <ul>
+              <li>
+                照片缩小飞进灵动岛，灵动岛张开星空，做出吞咽动作，同时有震动和音效
+              </li>
+              <li>左滑保留并看下一张，右滑回到上一张</li>
+              <li>一键加入相簿，整理不被打断</li>
+              <li>底部缩略图条标出整理状态，点击即可跳转</li>
+              <li>视频静音循环播放，长按 2/3/4 倍速快进</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="island">✨ 12 / 86 · 待删 5</div>
+            <div class="photo-mock"></div>
+          </div>
+        </div>
+
+        <div class="feature-row reverse">
+          <div>
+            <span class="tag">泡泡整理</span>
+            <h3>点碎泡泡，烦恼也一起碎掉</h3>
+            <ul>
+              <li>瀑布流泡泡，可选 2/3/4 列</li>
+              <li>点击碎掉，长按预览，两种手势可以互换</li>
+              <li>肥皂泡、喷射墨水、仙女棒三种破碎特效</li>
+              <li>陀螺仪沉浸模式，倾斜手机泡泡随之漂动</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div class="bubble-grid" id="bubbleGrid"></div>
+          </div>
+        </div>
+
+        <div class="feature-row">
+          <div>
+            <span class="tag">安全删除</span>
+            <h3>先放进待删除区，想清楚再删</h3>
+            <ul>
+              <li>所有删除操作只放进待删除区，确认前随时可以移出</li>
+              <li>查看可释放空间，以及保留、待删除、未整理的比例</li>
+              <li>确认后批量删除，照片会进入系统「最近删除」，还能找回</li>
+              <li>全局待删除区，汇总所有模式中标记的照片</li>
+            </ul>
+          </div>
+          <div class="feature-visual">
+            <div style="width: 78%">
+              <p style="color: var(--muted); font-size: 14px">
+                待删除 128 张 · 可释放 1.6 GB
+              </p>
+              <div
+                style="
+                  display: flex;
+                  height: 14px;
+                  border-radius: 99px;
+                  overflow: hidden;
+                  margin: 14px 0 20px;
+                "
+              >
+                <i style="flex: 5; background: var(--accent-2)"></i>
+                <i style="flex: 2; background: var(--pink)"></i>
+                <i style="flex: 3; background: #2a2f45"></i>
+              </div>
+              <p style="font-size: 13px; color: var(--muted)">
+                ■ 保留 &nbsp; ■ 待删除 &nbsp; ■ 未整理
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="smart" style="background: var(--bg-2)">
+      <div class="container">
+        <div class="section-title">
+          <h2>智能清理，找出不需要的照片</h2>
+          <p>在后台增量分析并缓存结果，中断后从上次的位置继续扫描</p>
+        </div>
+        <div class="card" style="padding: 8px 12px">
+          <table>
+            <thead>
+              <tr>
+                <th>功能</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>重复照片</td>
+                <td>
+                  内容几乎相同、拍摄时间相差 60
+                  秒以内的照片归为一组。根据分辨率、清晰度、是否收藏和拍摄时间推荐保留一张，可一键选中其余照片。
+                </td>
+              </tr>
+              <tr>
+                <td>相似照片</td>
+                <td>
+                  连拍和同场景照片按组显示，可以逐张整理，也可以在组内多选。
+                </td>
+              </tr>
+              <tr>
+                <td>模糊照片</td>
+                <td>按清晰度从低到高排列，多选后加入待删除区。</td>
+              </tr>
+              <tr>
+                <td>AI 内容分类</td>
+                <td>在设备上识别人物、假期、美食、宠物、风景、文档等类别。</td>
+              </tr>
+              <tr>
+                <td>清理空相簿</td>
+                <td>找出没有照片的相簿，可一键删除。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="grid" style="margin-top: 40px">
+          <div class="card">
+            <div class="icon">📈</div>
+            <h3>进度与成就</h3>
+            <p>
+              首页查看累计删除数量、释放空间和整理百分比，按月统计清理成果。
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">⏯️</div>
+            <h3>断点续整</h3>
+            <p>
+              退出或闪退后，再次进入按月整理或分类整理，会从上次的位置继续。
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon">🌐</div>
+            <h3>多语言</h3>
+            <p>
+              支持简体中文、繁體中文、English、日本語、한국어，切换后立即生效。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="container">
+        <div class="privacy-banner">
+          <h2>🔒 照片只在你的 iPhone 上</h2>
+          <p>
+            照片的读取、分析和分类都在设备本地完成。泡泡相册不会上传任何照片或分析结果，也不需要注册账号。
+          </p>
+          <div class="stats">
+            <div><b>0</b><span>上传的照片</span></div>
+            <div><b>100%</b><span>本地处理</span></div>
+            <div><b>0</b><span>需要的账号</span></div>
+          </div>
+          <p style="margin-top: 28px">
+            <a href="privacy.html">阅读隐私政策 →</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <span>© <span id="year"></span> 泡泡相册. All rights reserved.</span>
+        <nav>
+          <a href="privacy.html">隐私政策</a>
+          <a href="terms.html">用户协议</a>
+          <a href="mailto:support@example.com">联系我们</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      const bubbles = document.getElementById("bubbles");
+      for (let i = 0; i < 18; i++) {
+        const s = document.createElement("span");
+        const size = 30 + Math.random() * 110;
+        s.style.width = s.style.height = size + "px";
+        s.style.left = Math.random() * 100 + "%";
+        s.style.animationDuration = 10 + Math.random() * 14 + "s";
+        s.style.animationDelay = -Math.random() * 20 + "s";
+        bubbles.appendChild(s);
+      }
+
+      const colors = [
+        ["#ffb37c", "#ff7ab6"],
+        ["#7c8cff", "#4fd1c5"],
+        ["#ffd36e", "#ff8a5c"],
+        ["#9b7cff", "#ff7ab6"],
+        ["#4fd1c5", "#7cc4ff"],
+      ];
+      const grid = document.getElementById("bubbleGrid");
+      for (let i = 0; i < 12; i++) {
+        const b = document.createElement("i");
+        const [c1, c2] = colors[i % colors.length];
+        b.style.setProperty("--c1", c1);
+        b.style.setProperty("--c2", c2);
+        b.style.animationDelay = -(i * 0.37) + "s";
+        grid.appendChild(b);
+      }
+    </script>
+  </body>
+</html>
